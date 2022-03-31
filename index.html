@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Simulador Objetos + Array</title>
+</head>
+<body>
+    <main class="main">
+        <form class="form-container">
+
+            <div class="form-principal">              
+                <label for="familiares" class="form-label">Cantidad de Familiares</label>
+                <input type="number" name="familiares" id="cantidad-familiares" class="input-cantidad-familiares">
+                
+                <div class="contenedor-botones">
+                    <button type="submit" id="btn-continuar" class="btn">CONTINUAR</button>
+                    <button type="button" id="btn-calcular" class="btn oculto">Calcular Edades</button>
+                    <button id="btn-agregar-salarios" class="btn oculto">Agregar Salarios</button>
+                    <button id="btn-calcular-salarios" class="btn oculto">Calcular Salarios</button>
+                    <button type="reset" id="btn-reset" class="btn">RESET</button>
+                    <button type="button" id="btn-objeto" class="btn oculto">crear objetos</button>
+                </div>
+            </div>
+
+            <!-- contenedor de Formulario Inyectado con Js -->
+            <div id="form-edad-container" class="form-edades">
+
+
+            </div>
+            
+            <!-- contenedor de resultados edades -->
+            <div id="cont-res-edades" class="cont-res-edades oculto">
+                <div class="contenedor-cerrar-edades">
+                    <button id="btn-cerrar-res-edades" class="btn-cerrar-edades">X</button>
+                </div>
+                <p id="mayor-edad" class="texto-res-edades"></p>
+                <p id="menor-edad" class="texto-res-edades"></p>
+                <p id="promedio-edad" class="texto-res-edades"></p>
+            </div>
+
+            <!-- contenedor de resultados Salarios -->
+            <div id="cont-res-salarios" class="cont-res-salarios oculto">
+                <div class="contenedor-cerrar-salarios">
+                    <button id="btn-cerrar-res-salarios" class="btn-cerrar-salarios">X</button>
+                </div>
+                <p id="mayor-salario" class="texto-res-salarios"></p>
+                <p id="menor-salario" class="texto-res-salarios"></p>
+                <p id="promedio-salario" class="texto-res-salarios"></p>
+            </div>
+        </form>
+    </main>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/crearObjetosConFamiliares.js"></script>
+    <script src="./js/calculos.js"></script>
+    <script src="./js/obtenerMostrarEdadesSalarios.js"></script>
+    <script src="./js/agregarQuitarElementos.js"></script>
+    <script src="./js/mostrarOcultarBotones.js"></script>
+</body>
+</html>
